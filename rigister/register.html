@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="rigister.css">
+        <title>register</title>
+    </head>
+    <body background="/login/assets/bg.jpg">
+        <div>
+            <section>
+                <div class="headline">
+                    <h1>Cadastre-se no restaurante<br>SABOR DO NORDESTE</h1>
+                </div>
+                <form>
+                    <div class="input-wrapper">
+                        <label for="Nome">Nome</label>
+                        <input
+                        type="text"
+                        required
+                        placeholder="Digite seu Nome"
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Digite seu e-mail"
+                        >
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password">Senha</label>
+                        <input
+                        type="password"
+                        id="senha"
+                        required
+                        placeholder="Crie uma senha"
+                        >
+                        <img
+                            onclick="togglePassword()"
+                            class="eye"
+                            src="/login/assets/eye-off.svg"
+                            alt=""/>
+                                            
+                        <img
+                            onclick="togglePassword()"
+                            class="eye hide"
+                            src="/login/assets/eye.svg"
+                            alt=""/>
+                    </div>
+                    <button type="submit">Cadastrar agora</button>
+                </form>
+            </section>
+        </div>
+        <script>
+
+            function togglePassword() {
+                document
+                    .querySelectorAll(".eye")
+                    .forEach((eye) => eye.classList.toggle("hide"))
+
+                const type =
+                    senha.getAttribute("type") == "password" ? "text" : "password"
+                        
+                    senha.setAttribute("type", type)
+                
+            }
+        </script>
+    </body>
+</html>

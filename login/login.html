@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+        <title>Login</title>
+    </head>
+
+    <body background="./assets/bg.jpg">
+        <div id="page" class="flex">
+            <div>
+                <main>
+                    <section>
+                        <header>
+                            <div>
+                                <h1>SABOR DO NORDESTE</h1>
+                                <p>Falta pouco para matar sua fome!</p>
+                            </div>
+                        </header>
+                        
+                        <div>
+                            <form>
+                                <div>
+                                    <div class="input-wrapper">
+                                        <label for="email">E-mail</label>
+                                        <input
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        required
+                                        placeholder="Digite seu E-mail"
+                                        >
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <div class="label-wrapper flex">
+                                            <label for="senha">Senha</label>
+                                            <a href="#">Esqueceu a senha</a>
+                                        </div>
+                                        
+                                        <input
+                                        type="password"
+                                        id="senha"
+                                        required
+                                        placeholder="Digite sua senha"
+                                        >
+
+                                        <img
+                                        onclick="togglePassword()"
+                                        class="eye"
+                                        src="./assets/eye-off.svg"
+                                        alt=""/>
+                                            
+                                        <img
+                                        onclick="togglePassword()"
+                                        class="eye hide"
+                                        src="./assets/eye.svg"
+                                        alt=""/>
+                                        
+                                    </div>
+                                    
+                                    <button type="submit">Entrar</button>
+                                    <div class="create-account">
+                                        Ainda não tem uma conta?
+                                        <a href="/rigister/register.html">Cadastre-se</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+        <script>
+
+            function togglePassword() {
+                document
+                    .querySelectorAll(".eye")
+                    .forEach((eye) => eye.classList.toggle("hide"))
+
+                const type =
+                    senha.getAttribute("type") == "password" ? "text" : "password"
+                        
+                    senha.setAttribute("type", type)
+                
+            }
+        </script>
+    </body>
+</html>

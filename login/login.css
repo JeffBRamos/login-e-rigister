@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+button{
+    all: unset;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+#page > div{
+    margin: 5rem auto;
+    display: flex;
+}
+.eye{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 52%;
+    right: 5%;
+}
+.hide{
+    display: none;
+}
+h1{
+    text-align: center;
+    font-size: 2.8rem;
+    
+}
+p{
+    width: 50rem;
+    text-align: center;
+    font-size: 2rem;
+}
+div h1 + p{
+    margin-top: 1.5rem;
+}
+form{
+    margin-top: 3rem;
+}
+form input{
+    width: 100%;
+    background: #ffffff;
+    border: 0.1rem solid #000000;
+    border-radius: 0.4rem;
+    padding: 1.6rem 1.2rem;
+    margin-top: 0.8rem;
+    display: flex;
+}
+.label-wrapper{
+    justify-content: space-between;
+}
+.input-wrapper{
+    position: relative;
+}
+form .input-wrapper + .input-wrapper{
+    margin-top: 1.6rem;
+}
+form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background-color: #3a32af;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #000000;
+    margin-block: 3.2rem;
+}
+form button:focus{
+    outline: 2px solid black;
+    border-radius: 0.2rem;
+}
+form button:hover{
+    background: #2b266b;
+}
+section{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #4b4b4bd3 ;
+}
+label{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.create-account{
+    font-weight: bold;
+}
+a{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+@media only screen and (max-width: 95.0rem){
+    section{
+        width: 85%;
+    }
+}
